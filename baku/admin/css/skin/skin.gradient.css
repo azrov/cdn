@@ -1,0 +1,82 @@
+.page-sidebar {
+	background-image: linear-gradient(180deg, #3949ab, #2962ff);
+}
+
+.page-sidebar .logo {
+	background: #364dba;
+	border-bottom: 1px solid #445edc;
+}
+
+.page-sidebar-menu ul li a,
+.page-sidebar-menu ul li a svg {
+	color: #a9bdf7;
+}
+
+.page-sidebar-menu ul li.active>a,
+.accordion-menu .sub-menu,
+.sidebar-footer {
+	background: transparent;
+}
+
+.page-sidebar-menu ul li.menu-navigation,
+.page-sidebar-menu ul li.menu-elements,
+.page-sidebar-menu ul li.menu-extras,
+.page-sidebar-menu ul li.menu-others,
+.page-sidebar-menu ul li.active>a,
+.open:not(.active)>a {
+	color: #ffffff;
+}
+
+.page-sidebar-menu ul li .sub-menu a:hover,
+.page-sidebar-menu ul li a:hover,
+.page-sidebar-menu ul li a:hover svg,
+.page-sidebar-menu ul>li.active a svg,
+.page-sidebar-menu ul>li.open a svg,
+.page-sidebar-menu ul li.active>a i,
+.page-sidebar-menu ul li.active>a i.accordion-icon,
+.page-sidebar-menu ul li.open>a i.accordion-icon,
+.page-sidebar-menu ul li a:hover i.accordion-icon {
+	color: #ffffff;
+}
+
+.accordion-menu .sub-menu li a:hover:before,
+.page-sidebar-menu ul li ul li.active>a:before {
+	border-color: #ffffff;
+}
+
+.page-sidebar-collapsed .page-sidebar-menu>ul>li.active>a {
+	border: 1px solid #364dba;
+	background: linear-gradient(180deg, #3949ab, #2962ff);
+}
+
+.page-sidebar-collapsed .page-sidebar-menu>ul>li:hover>a {
+	color: #ffffff;
+	border: 1px solid #3056d9;
+	background: linear-gradient(180deg, #3949ab, #2962ff);
+}
+
+.page-sidebar-collapsed .page-sidebar-menu ul li .sub-menu {
+	position: absolute;
+	left: 58px;
+	z-index: 9999;
+	background: linear-gradient(180deg, #3949ab, #2962ff);
+	border-left: 1px solid #3056d8;
+	border-right: 1px solid #3253cf;
+	border-bottom: 1px solid #2f57da;
+}
+
+.sidebar-footer {
+	background: #2c5def;
+}
+
+.sidebar-footer a.pull-left {
+	color: #dae1f5;
+}
+
+.sidebar-footer .pull-left {
+	border-top: 1px solid #406fff;
+}
+
+.sidebar-footer a.pull-left:hover {
+	background: #2a59e0;
+}
