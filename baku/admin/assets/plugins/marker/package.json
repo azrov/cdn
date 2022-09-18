@@ -1,0 +1,16 @@
+{
+  "name": "image-marker",
+  "version": "1.0.0",
+  "description": "jQuery plugin for putting markers with notes on image",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-ui-dist": "^1.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

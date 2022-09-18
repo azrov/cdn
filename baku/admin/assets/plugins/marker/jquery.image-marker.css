@@ -1,0 +1,116 @@
+.image-marker-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-marker-container__box {
+  position: absolute;
+  border: 1px solid #ddd;
+  top: 1px;
+  bottom: 1px;
+}
+
+.image-marker-container__box__content {
+  position: relative;
+}
+
+.image-marker-container__box--left {
+  left: 0;
+  width: 23%
+}
+
+.image-marker-container__box--right {
+  right: 0;
+  width: 23%;
+}
+
+.image-marker-container__box--image {
+  left: 27%;
+  right: 27%;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQUlEQVQYV2NkIABWrVr1H6SEEZ86mKKwsDBGnAqRFeE0EV0RVoXYFGEoxKUIRSE+RXCFhBSBFRKjCK4QFE6EwhMA6fIqBUB9cUAAAAAASUVORK5CYII=);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-marker-container__img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.image-marker-container__box--drag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+}
+
+.image-marker__text-box {
+  margin-bottom: 10px;
+}
+
+.image-marker__text-box__close-btn {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  cursor: pointer;
+  display: none;
+}
+
+.image-marker__text-box:hover .image-marker__text-box__close-btn {
+  display: block;
+}
+
+.image-marker-container__box--left .image-marker__text-box {
+  border-width: 6px;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.image-marker-container__box--right .image-marker__text-box {
+  border-width: 6px;
+  border-style: solid;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.image-marker__text-box__title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  padding: 10px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.image-marker__text-box__content {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #444;
+  padding: 10px;
+  margin: 0;
+  line-height: 18px;
+}
+
+.image-marker__dot {
+  width: 20px;
+  height: 20px;
+  cursor: move;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.image-marker__line {
+  height: 2px;
+  position: absolute;
+}

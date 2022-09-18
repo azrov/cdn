@@ -1,0 +1,120 @@
+.page-sidebar {
+	background: #ffffff;
+}
+
+.page-sidebar .logo {
+	background: #ffffff;
+	border-bottom: 1px solid rgba(70, 95, 145, 0.1);
+}
+
+.page-sidebar-menu ul li a {
+	color: #2d353e;
+}
+
+.page-sidebar-menu ul li.active>a,
+.accordion-menu .sub-menu,
+.sidebar-footer {
+	background: #ffffff;
+}
+
+.page-sidebar-menu ul li.menu-navigation,
+.page-sidebar-menu ul li.menu-elements,
+.page-sidebar-menu ul li.menu-extras,
+.page-sidebar-menu ul li.menu-others,
+.page-sidebar-menu ul li.active>a,
+.open:not(.active)>a {
+	color: inherit;
+}
+
+.page-sidebar-menu ul li .sub-menu a:hover,
+.page-sidebar-menu ul li a:hover,
+.page-sidebar-menu ul li a:hover svg,
+.page-sidebar-menu ul>li.active a svg,
+.page-sidebar-menu ul>li.open a svg,
+.page-sidebar-menu ul li.active>a i,
+.page-sidebar-menu ul li.active>a i.accordion-icon,
+.page-sidebar-menu ul li.open>a i.accordion-icon,
+.page-sidebar-menu ul li a:hover i.accordion-icon {
+	color: #5d78ff;
+	background: #fff;
+}
+
+.accordion-menu .sub-menu li a:before,
+.page-sidebar-menu ul li ul li.active>a:before {
+	top: 12px;
+	left: -5px;
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: transparent;
+	border: 1px solid #151c29;
+	position: absolute;
+}
+
+.accordion-menu .sub-menu li a:hover:before,
+.page-sidebar-menu ul li ul li.active>a:before {
+	top: 12px;
+	left: -5px;
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: transparent;
+	border: 1px solid #007bff;
+	position: absolute;
+	-webkit-transition: all .7s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.page-sidebar-collapsed .page-sidebar-menu ul li .sub-menu {
+	background: #fff;
+	border-left: 1px solid #e3e7ef;
+	border-right: 1px solid #e3e7ef;
+	border-bottom: 1px solid #e3e7ef;
+}
+
+.page-sidebar-collapsed .page-sidebar-menu>ul>li:hover>a {
+	color: #151c29;
+	border: 1px solid #e3e7ef;
+	background: #fff;
+}
+
+.accordion-menu .sub-menu li a:hover:before,
+.page-sidebar-menu ul li ul li.active>a:before {
+	border-color: #5d78ff;
+}
+
+.page-sidebar-menu ul>li>ul>li:hover,
+.page-sidebar-menu ul>li>ul>li,
+.page-sidebar-menu ul>li>ul>li.active {
+	border-left: none;
+	color: #758cff;
+}
+
+.page-sidebar-collapsed .page-sidebar-menu>ul>li.active>a {
+	border-right: none!important;
+	background: #fff;
+	border: 1px solid #e3e7ef;
+}
+
+.page-sidebar-collapsed .page-sidebar-menu>ul>li:hover>a {
+	border: 1px solid #e3e7ef;
+	border-right: 1px solid #e3e7ef!important;
+	background: #fff;
+}
+
+.sidebar-footer a.pull-left {
+	border-top: 1px solid rgba(70, 95, 145, 0.1);
+}
+
+.sidebar-footer a.pull-left:hover {
+	background: #f2f2f7;
+}
+
+@media (max-width:991px) {
+	#sidebar-toggle-button-close {
+		color: #adb5bd;
+	}
+}

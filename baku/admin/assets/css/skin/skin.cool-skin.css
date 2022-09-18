@@ -1,0 +1,13 @@
+body {
+	background-color: rgba(26, 108, 225, 0.03);
+}
+
+.page-sidebar-fixed .page-header {
+	-webkit-box-shadow: 0 0 25px rgba(26, 108, 225, 0.1);
+	-moz-box-shadow: 0 0 25px rgba(26, 108, 225, 0.1);
+	box-shadow: 0 0 25px rgba(26, 108, 225, 0.1);
+}
+
+.card {
+	box-shadow: 0 0 25px rgba(26, 108, 225, 0.1);
+}

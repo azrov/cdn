@@ -1,0 +1,88 @@
+.fc-toolbar.fc-header-toolbar {
+    margin-bottom: 0;
+    padding: 15px 30px;
+}
+
+.fc-toolbar h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.fc-toolbar .btn {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.fc-view-container *, 
+.fc-view-container *:before, 
+.fc-view-container *:after {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.fc-view, .fc-view>table {
+    position: relative;
+    z-index: 1;
+    padding: 0 30px 30px 30px;
+}
+
+.fc-event, .fc-event-dot {
+    background-color: rgba(204, 209, 233, 0.70);
+}
+
+.fc-event {
+    border: 1px solid rgba(204, 209, 233, 0.70);
+}
+
+
+.fc-ltr .fc-h-event.fc-not-start, 
+.fc-rtl .fc-h-event.fc-not-end {
+    padding-left: 0.5rem;
+
+}
+.fc-event .fc-time, 
+.fc-event .fc-title, 
+.fc-event-warning.fc-event .fc-time, 
+.fc-event-danger.fc-event .fc-time, 
+.fc-event-warning.fc-event .fc-title,
+.fc-event-danger.fc-event .fc-title{
+ color: #0f132b
+}
+
+.fc-event {
+	border-left: 2px solid #5d78ff;
+}
+
+.fc-event-warning.fc-event {
+    background: rgba(255,217,80,0.15);
+    border-color: rgba(255,217,80,0.15);
+	border-left: 2px solid #e0b605;
+}
+
+.fc-event-danger.fc-event {
+    background: rgba(217,83,79,0.15);
+    border-color: rgba(217,83,79,0.15);
+	border-left: 2px solid #ca0e0e;
+}
+
+.fc-event-success.fc-event {
+    background: rgba(114, 217, 79, 0.15);
+    border-color: rgba(114, 217, 79, 0.15);
+    border-left: 2px solid #76ca0e;
+}
+
+.fc-event-info.fc-event {
+    background: rgb(222, 244, 255);
+    border-color: rgb(222, 244, 255);
+    border-left: 2px solid #6ac3ef;
+}
+
+.fc-event-dark.fc-event {
+    background: rgba(156, 155, 171, 0.73);
+    border-color: rgb(204, 204, 212);
+    border-left: 2px solid #0b0e1f;
+}
+
+.fc-popover {
+position: absolute!important;
+}
