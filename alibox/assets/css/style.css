@@ -1,0 +1,1759 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+:focus {
+  outline: 0;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ul,
+li {
+  float: left;
+  display: inline;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+i,
+em {
+  font-style: normal;
+}
+button,
+select {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*	Finish RESET	*/
+
+body {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+  font-family: PT Sans, Arial;
+  line-height: 20px;
+  -webkit-text-size-adjust: 100%;
+  background: #dee1e5 url(https://azrov.github.io/cdn/alibox/assets/img/bg.png)
+    fixed;
+}
+
+*::-moz-selection {
+  background: rgba(0, 0, 0, 0.1);
+}
+*::selection {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #2e4358;
+  text-decoration: none;
+}
+a:hover {
+  color: #fd5559;
+  text-decoration: none;
+}
+
+input,
+textarea,
+select {
+  float: left;
+  font-size: 14px;
+  margin: 0;
+  font-family: PT Sans, Arial;
+  border-radius: 0;
+  border: 0;
+  -webkit-appearance: none;
+}
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 0;
+  font-family: PT Sans, Arial;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #ccc;
+  transition: ease 0.3s;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+.input:focus {
+  border-bottom-color: #53aeb1;
+  box-shadow: inset 0 -1px 0 #53aeb1;
+}
+
+textarea.input {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.button {
+  float: none;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0 28px;
+  cursor: pointer;
+  border: none;
+  color: #fd5559;
+  background-color: #fff;
+  border: 2px solid #fd5559;
+  transition: all 0.3s;
+  border-radius: 23px;
+}
+
+.button:hover {
+  border-color: #4f5a6e;
+  color: #4f5a6e;
+}
+
+.checkbox {
+  margin: 3px 7px 0px 0px;
+}
+
+.outer {
+  width: 100%;
+  max-width: 1330px;
+  margin: 0 auto;
+  position: relative;
+}
+.inner {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.canlitv {
+  float: left;
+  width: 100%;
+  padding: 95px 0 0 70px;
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+.main-wrap {
+  float: left;
+  width: 100%;
+  padding: 0 0 0 30px;
+  position: relative;
+  min-height: 1450px;
+}
+.main-full {
+  padding-right: 30px;
+}
+.wrap {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1260px;
+  min-height: 10px;
+}
+.clear {
+  clear: both;
+}
+.tac {
+  text-align: center;
+}
+
+.fl {
+  float: left !important;
+}
+.fr {
+  float: right !important;
+}
+.fn {
+  float: none !important;
+}
+
+.w100 {
+  float: left;
+  width: 100% !important;
+}
+.w50 {
+  float: left;
+  width: 50%;
+}
+.mt30 {
+  margin-top: 30px;
+}
+
+/*	Start TOP	*/
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: auto;
+  bottom: 0;
+  width: 70px;
+  background-color: #4f5a6e;
+  z-index: 3000;
+}
+
+#logo {
+  float: left;
+  z-index: 240;
+}
+#logo img {
+  float: left;
+  height: 65px;
+}
+#logo img:hover {
+  opacity: 0.7;
+}
+
+.nav-icon {
+  float: left;
+  width: 70px;
+  height: 65px;
+  background: #424b5f
+    url(https://azrov.github.io/cdn/alibox/assets/img/icon-menu.png) no-repeat
+    center;
+  background-size: auto 17px;
+  text-indent: -9999px;
+  cursor: pointer;
+  position: relative;
+}
+.nav-icon-close {
+  background-color: #31394a;
+  background-image: url(https://azrov.github.io/cdn/alibox/assets/img/icon-close.png);
+  background-size: 32px;
+}
+.nav-icon-close::after {
+  content: "";
+  border-left: 5px solid transparent;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  height: 0;
+  position: absolute;
+  width: 0;
+  left: 0;
+  top: 26px;
+  border-left-color: #fff;
+  z-index: 5;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  width: 240px;
+  padding-top: 65px;
+  margin-left: 70px;
+  background-color: #3c4558;
+  box-shadow: 0 0 100px #fd5559;
+  z-index: 2500;
+  display: none;
+}
+
+.navigation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  background: #e1e6ec url(https://alibox.eu.org/uploads/logo_s.png) no-repeat
+    center;
+  background-size: auto 35px;
+}
+
+.navigation h3 {
+  float: left;
+  width: 100%;
+  height: 65px;
+  padding-left: 25px;
+  background-color: #31394a;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 65px;
+  box-shadow: inset -2px 0 0 #f3cf61;
+}
+
+.navigation ul {
+  width: 100%;
+}
+.navigation li {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.navigation li a {
+  float: left;
+  width: 100%;
+  padding: 13px 10px 12px 25px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: inset 2px 0 0 rgba(255, 255, 255, 0);
+  transition: all 0.3s;
+}
+.navigation li a:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: inset 2px 0 0 #f3cf61;
+}
+.navigation li a.active {
+  color: #009b77;
+  box-shadow: inset -2px 0 0 #009b77;
+}
+
+.nav-letter {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  height: 70px;
+}
+.nav-letter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 6px;
+  background: url(https://azrov.github.io/cdn/alibox/assets/img/icon-letter-spacer.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+.nav-letter a {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background: url(https://azrov.github.io/cdn/alibox/assets/img/icon-letter.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  text-indent: -9999px;
+  position: relative;
+  z-index: 2;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: auto;
+  width: 1330px;
+  height: 65px;
+  padding: 0 145px;
+  background-color: #e1e6ec;
+  z-index: 2000;
+}
+
+.top-search-out {
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.top-search-icon {
+  display: none;
+}
+
+.top-search {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  z-index: 3500;
+  position: relative;
+}
+.top-search input {
+  width: 100%;
+  height: 35px;
+  padding: 0 40px 0 12px;
+  border: 1px solid #abb3c2;
+  line-height: 35px;
+  border-radius: 4px;
+}
+.top-search input:focus {
+  border-color: #4f5a6e;
+}
+
+.top-search button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  background: url(https://azrov.github.io/cdn/alibox/assets/img/icon-search.png)
+    no-repeat center;
+  background-size: 16px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  text-indent: -9999px;
+  opacity: 0.4;
+}
+.top-search button:hover {
+  background-size: 18px;
+  opacity: 1;
+}
+
+.top-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #abb3c2;
+}
+
+.top-avatar {
+  float: left;
+  position: relative;
+}
+.top-avatar span {
+  float: left;
+  height: 65px;
+  padding: 15px 15px 15px 10px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 35px;
+}
+.top-avatar span::before {
+  content: "";
+  float: left;
+  width: 35px;
+  height: 35px;
+  margin-right: 7px;
+  background: #7d8698
+    url(https://azrov.github.io/cdn/alibox/assets/img/icon-lock.png) no-repeat
+    center;
+  background-size: 17px;
+  border-radius: 18px;
+}
+.top-avatar span::after {
+  content: "";
+  border-right: 10px solid transparent;
+  border-top: 32px solid transparent;
+  border-bottom: 33px solid transparent;
+  height: 0;
+  position: absolute;
+  width: 0;
+  left: -10px;
+  top: 0;
+  border-right-color: #abb3c2;
+  z-index: 5;
+}
+
+.top-menu {
+  display: none;
+  position: absolute;
+  top: 65px;
+  right: 0;
+  width: 260px;
+  padding: 5px 10px;
+  background-color: #fff;
+  z-index: 4000;
+  border-radius: 0 0 4px 4px;
+  border-bottom: 2px solid #fd5559;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.top-menu::before {
+  content: "";
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  height: 0;
+  position: absolute;
+  width: 0;
+  right: 30px;
+  top: -5px;
+  border-bottom-color: #fff;
+  z-index: 5;
+}
+
+.top-menu ul {
+  width: 100%;
+}
+
+.top-menu li {
+  width: 100%;
+  border-right: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.top-menu li:last-child {
+  border-bottom: none;
+}
+.top-menu li a {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  font-weight: 700;
+}
+.top-menu li a img {
+  width: 16px;
+  padding: 2px 0;
+  margin: 5px 7px 0 0;
+  border-radius: 0;
+}
+
+/*	Finish TOP	*/
+
+.controls {
+  height: 100%;
+}
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  background-color: #fff;
+  text-indent: -9999px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.2s;
+  background: #000
+    url(https://azrov.github.io/cdn/alibox/assets/img/arrow-left.png) no-repeat
+    center;
+  background-size: auto 56px;
+}
+
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+  background-image: url(https://azrov.github.io/cdn/alibox/assets/img/arrow-right.png);
+}
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #009b77;
+}
+
+ul.slick-dots {
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  z-index: 500;
+  background: url(https://azrov.github.io/cdn/alibox/assets/img/gradient.png)
+    repeat-x;
+  background-size: auto 100%;
+}
+ul.slick-dots li {
+  float: none;
+  height: 3px;
+  margin: 0 3px;
+  display: inline-block;
+}
+ul.slick-dots li button {
+  float: left;
+  width: 14px;
+  height: 3px;
+  text-indent: -5999px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+ul.slick-dots li button:hover,
+ul.slick-dots li.slick-active button {
+  background-color: #fff;
+}
+
+.slider-pro {
+  float: left;
+  width: 30%;
+  position: relative;
+  z-index: 700;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.slider-pro div {
+  float: left;
+  width: 100%;
+}
+.slider-pro div img {
+  float: left;
+  width: 100%;
+}
+
+.slider-pro ul.slick-dots {
+  padding: 15px 0;
+}
+
+/*	Finish SLIDER	*/
+
+.footer {
+  float: left;
+  width: 100%;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #eaedf2;
+  position: relative;
+  font-size: 12px;
+  color: #798796;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.07);
+}
+
+.footer-share {
+  float: right;
+}
+.footer-share > img {
+  float: right;
+  height: 40px;
+}
+.footer-share ul {
+  padding-right: 20px;
+  margin: 4px 20px 0 0;
+  border-right: 1px solid #d9dce3;
+}
+.footer-share li {
+  padding-left: 15px;
+}
+.footer-share li:first-child {
+  padding-left: 0;
+}
+.footer-share li a img {
+  float: left;
+  height: 32px;
+  transition: all 0.3s;
+}
+.footer-share li a img:hover {
+  opacity: 0.6;
+}
+
+.copyright {
+  float: left;
+  padding: 10px 0 10px 20px;
+}
+
+/*	Finish FOOTER	*/
+
+.left-block {
+  float: left;
+  width: calc(100% - 360px);
+  min-height: 1200px;
+}
+.right-block {
+  float: left;
+  margin-left: 30px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.page-title {
+  float: left;
+  width: 100%;
+  margin-bottom: 25px;
+  color: #fd5559;
+  font-size: 17px;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #fff;
+  text-align: center;
+  box-shadow: inset 0 -1px 0 #e7edf0;
+  background: #ffffff;
+  background: -webkit-linear-gradient(top, #eef2f4, #ffffff);
+  background: -o-linear-gradient(top, #eef2f4, #ffffff);
+  background: -moz-linear-gradient(top, #eef2f4, #ffffff);
+  background: linear-gradient(top, #eef2f4, #ffffff);
+  border-radius: 4px 4px 0 0;
+}
+.page-title-white {
+  background: #ffffff;
+}
+
+.page-title span {
+  display: inline-block;
+  padding: 12px 0 13px 0;
+  box-shadow: inset 0 -1px 0 #fd5559;
+  position: relative;
+}
+.page-title span::before,
+.page-title span::after {
+  content: "";
+  border-bottom: 3px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  height: 0;
+  position: absolute;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  margin-left: -5px;
+  border-bottom-color: #f5f5f5;
+  z-index: 5;
+}
+
+.page-title span::after {
+  bottom: 1px;
+  border-bottom-color: #fd5559;
+  z-index: 4;
+}
+
+.channel-list {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.channel-inner {
+  margin: 0 -10px;
+}
+.channel-list ul {
+  width: 100%;
+}
+.channel-list ul > li {
+  width: 33.33334%;
+  padding: 0 10px 20px 10px;
+}
+.channel-list ul > li > a {
+  float: left;
+  width: 100%;
+  height: 95px;
+  padding: 19px 19px 19px 124px;
+  border: 1px solid #dde5ea;
+  background-color: #f8fbfd;
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.3s;
+}
+.channel-list ul > li > a:hover {
+  border-color: #afc2cd;
+  background-color: #fff;
+}
+
+.channel-list ul > li > a::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 89px;
+  width: 15px;
+  height: 55px;
+  background: url(https://azrov.github.io/cdn/alibox/assets/img/breadcrumb.png)
+    no-repeat;
+  background-size: 100% 100%;
+}
+.channel-list ul > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 12px;
+  height: 12px;
+  background: url(https://azrov.github.io/cdn/alibox/assets/img/angle.png)
+    no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.15;
+}
+.channel-list ul > li > a:hover::after {
+  opacity: 1;
+}
+
+.channel-list ul > li > a img {
+  position: absolute;
+  left: 19px;
+  top: 19px;
+  width: 55px;
+  height: 55px;
+}
+.channel-list ul > li > a strong {
+  float: left;
+  width: 100%;
+  padding-top: 17px;
+  font-weight: 700;
+  font-size: 17px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.channel-list ul > li > a span {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  opacity: 0.5;
+}
+.channel-list ul > li > a:hover span {
+  opacity: 1;
+}
+
+.show-all {
+  float: left;
+  width: 100%;
+  height: 18px;
+  margin-bottom: 37px;
+  text-align: center;
+  border-bottom: 1px solid #e7edf0;
+}
+.show-all span {
+  display: inline-block;
+  padding: 0 15px;
+  background-color: #fff;
+}
+.show-all span a {
+  float: left;
+  height: 35px;
+  padding: 0 24px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #838b99;
+  border: 1px solid #dde5ea;
+  border-radius: 18px;
+  transition: ease 0.3s;
+}
+.show-all span a:hover {
+  color: #4f5a6e;
+  border-color: #4f5a6e;
+}
+
+.popular {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.popular ul {
+  width: 100%;
+  margin-top: -7px;
+}
+.popular li {
+  width: 100%;
+  padding: 7px 0;
+  border-bottom: 1px solid #e7edf0;
+}
+.popular li a {
+  float: left;
+  width: 100%;
+  padding-left: 20px;
+  position: relative;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.popular li a img {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.popular li a:hover img {
+  opacity: 0.6;
+}
+.popular li a strong {
+  font-weight: 700;
+}
+
+.popular li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: #fd5559;
+}
+.popular li:nth-child(2) a::before {
+  opacity: 0.9;
+}
+.popular li:nth-child(3) a::before {
+  opacity: 0.8;
+}
+.popular li:nth-child(4) a::before {
+  opacity: 0.7;
+}
+.popular li:nth-child(5) a::before {
+  opacity: 0.6;
+}
+.popular li:nth-child(6) a::before {
+  opacity: 0.5;
+}
+.popular li:nth-child(7) a::before {
+  opacity: 0.4;
+}
+.popular li:nth-child(8) a::before {
+  opacity: 0.3;
+}
+.popular li:nth-child(9) a::before {
+  opacity: 0.2;
+}
+.popular li:nth-child(10) a::before {
+  opacity: 0.1;
+}
+
+.rb-banner {
+  float: left;
+  width: 100%;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.rb-banner img {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 3px;
+}
+
+.site-about {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+.site-about article {
+  float: left;
+  width: 100%;
+  padding: 15px 20px;
+  background: #ffffff;
+  background: -webkit-linear-gradient(top, #f2f5f6, #ffffff);
+  background: -o-linear-gradient(top, #f2f5f6, #ffffff);
+  background: -moz-linear-gradient(top, #f2f5f6, #ffffff);
+  background: linear-gradient(top, #f2f5f6, #ffffff);
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.breadcrumb {
+  float: left;
+  width: 100%;
+  height: 35px;
+  margin-bottom: -10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  font-size: 11px;
+  line-height: 35px;
+  text-align: center;
+}
+.breadcrumb article {
+  display: inline-block;
+}
+.breadcrumb a {
+  float: left;
+  padding: 0 20px;
+  color: #777;
+}
+.breadcrumb a:hover {
+  color: #353535;
+}
+.breadcrumb i {
+  float: left;
+  width: 10px;
+  height: 35px;
+  background: url(https://azrov.github.io/cdn/alibox/assets/img/breadcrumb.png)
+    no-repeat center;
+}
+.breadcrumb strong {
+  float: left;
+  padding: 0 20px;
+  font-weight: 500;
+}
+
+.sub-wrap {
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.static-text {
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.player-out {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #151515;
+  text-align: center;
+  position: relative;
+}
+.player-wrap {
+  width: 100%;
+  max-width: 1200px;
+  display: inline-block;
+}
+.player {
+  float: left;
+  width: 100%;
+  height: 480px;
+}
+
+.player-tab {
+  float: left;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+}
+.player-tab ul {
+  float: none;
+  display: inline-block;
+}
+.player-tab ul::before,
+.player-tab li::after {
+  content: "";
+  float: left;
+  width: 1px;
+  height: 45px;
+  background: #000000;
+  background: -webkit-linear-gradient(bottom, #000000, #333333);
+  background: -o-linear-gradient(bottom, #000000, #333333);
+  background: -moz-linear-gradient(bottom, #000000, #333333);
+  background: linear-gradient(bottom, #000000, #333333);
+}
+.player-tab li::after {
+  float: right;
+}
+
+.player-tab li a {
+  float: left;
+  height: 45px;
+  padding: 0 20px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 43px;
+  position: relative;
+}
+.player-tab li a:hover {
+  box-shadow: inset 0 -2px 0 #fff;
+}
+.player-tab li a.active {
+  box-shadow: inset 0 -2px 0 #f3cf61;
+}
+.player-tab li a.active::before {
+  content: "";
+  border-bottom: 3px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  height: 0;
+  position: absolute;
+  width: 0;
+  left: 50%;
+  bottom: 2px;
+  margin-left: -5px;
+  border-bottom-color: #f3cf61;
+  z-index: 5;
+}
+
+.tab {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: inset 0 -1px 0 #e7edf0;
+}
+
+.tab ul {
+  float: none;
+  display: inline-block;
+}
+.tab li {
+  padding: 0 20px;
+  position: relative;
+}
+.tab li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 45px;
+  background: #ffffff;
+  background: -webkit-linear-gradient(top, #ffffff, #dae1e4);
+  background: -o-linear-gradient(top, #ffffff, #dae1e4);
+  background: -moz-linear-gradient(top, #ffffff, #dae1e4);
+  background: linear-gradient(top, #ffffff, #dae1e4);
+}
+.tab li:last-child::after {
+  display: none;
+}
+
+.tab li a {
+  float: left;
+  padding: 12px 0 13px 0;
+  position: relative;
+}
+.tab li a:hover {
+  box-shadow: inset 0 -1px 0 #4f5a6e;
+  color: #4f5a6e;
+}
+.tab li a.active {
+  box-shadow: inset 0 -1px 0 #fd5559;
+  color: #fd5559;
+}
+.tab li a.active::before,
+.tab li a.active::after {
+  content: "";
+  border-bottom: 3px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  height: 0;
+  position: absolute;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  margin-left: -5px;
+  border-bottom-color: #f5f5f5;
+  z-index: 5;
+}
+
+.tab li a.active::after {
+  bottom: 1px;
+  border-bottom-color: #fd5559;
+  z-index: 4;
+}
+
+.player-adv {
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.player-adv img {
+  display: inline-block;
+  width: 100%;
+  max-width: 728px;
+}
+
+.channel-about {
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+  background: #ffffff;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/*	Start ACCORDION	*/
+
+.accordion {
+  float: left;
+  width: 100%;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.accordion::after {
+  content: "";
+  float: left;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.accordion-section-title {
+  float: left;
+  width: 100%;
+  padding: 12px 0 12px 35px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  font-weight: 500;
+  background: url(https://azrov.github.io/cdn/alibox/assets/img/icon-expand.png)
+    no-repeat 5px center;
+  background-size: auto 16px;
+  position: relative;
+  font-size: 17px;
+}
+.accordion-section-title.active {
+  color: #009b77;
+  background-image: url(https://azrov.github.io/cdn/alibox/assets/img/icon-lessen.png);
+}
+.accordion-section-content {
+  float: left;
+  width: 100%;
+  padding: 0 0 15px 35px;
+  margin-top: -5px;
+  display: none;
+  color: #666;
+}
+
+/*	Start CONTACT	*/
+
+.contact-info {
+  float: left;
+  width: 100%;
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 16px;
+  color: #666;
+  border-bottom: 1px solid #e7edf0;
+}
+.contact-info article {
+  float: left;
+  width: 50%;
+  padding: 0 25px;
+}
+.contact-info article:last-child {
+  box-shadow: inset 1px 0 0 #e5e5e5;
+}
+.contact-info img {
+  float: left;
+  height: 60px;
+  margin-right: 20px;
+}
+.contact-info span {
+  float: left;
+  padding-top: 10px;
+}
+.contact-info a {
+  font-weight: 700;
+}
+
+.contact-form {
+  float: left;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.contact-form p {
+  float: left;
+  width: 50%;
+  padding: 0 20px 25px 20px;
+  position: relative;
+}
+.contact-form p:last-child {
+  padding-bottom: 0;
+}
+.contact-form p i {
+  float: left;
+  width: 100%;
+  padding-bottom: 9px;
+}
+
+.contact-form img {
+  float: left;
+  width: 110px;
+  height: 40px;
+  margin-right: 10px;
+  padding: 2px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.contact-form a.refresh {
+  float: left;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  background: #fff
+    url(https://azrov.github.io/cdn/alibox/assets/img/refresh.png) no-repeat
+    center center;
+  background-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.contact-form a:hover.refresh {
+  background-color: #eee;
+}
+
+.contact-map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+
+/*	Start PAGINATION */
+
+.pages {
+  float: left;
+  width: 100%;
+  height: 21px;
+  margin: 10px 0 40px 0;
+  color: #999;
+  text-align: center;
+  border-bottom: 1px solid #e2e2e2;
+}
+.pages ul {
+  float: none;
+  display: inline-block;
+}
+.pages li {
+  padding: 0 5px;
+}
+.pages li::before,
+.pages li::after {
+  content: "";
+  float: left;
+  width: 5px;
+  height: 40px;
+  background-color: #f5f5f5;
+}
+.pages li::after {
+  float: right;
+}
+
+.pages li a {
+  float: left;
+  width: 40px;
+  height: 40px;
+  transition: all 0.2s;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+  font-weight: 500;
+  color: #666;
+  line-height: 38px;
+}
+.pages li a:hover,
+.pages li a.current {
+  border-color: #009b77;
+  color: #009b77;
+}
+
+/*	Finish PAGINATION */
+
+li.suanda {
+  color: #fc5559;
+}
+@media only screen and (max-width: 1330px) {
+  body {
+    background: none;
+  }
+
+  .outer {
+    float: left;
+  }
+
+  #sidebar {
+    left: 0;
+  }
+
+  #header {
+    width: 100%;
+  }
+
+  .navigation {
+    left: 70px;
+    margin-left: 0;
+  }
+
+  .channel-list ul > li {
+    width: 50%;
+  }
+
+  .player {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .wrap {
+    float: left;
+  }
+
+  #header {
+    padding: 0 160px 0 100px;
+  }
+
+  .main-wrap {
+    padding-right: 30px;
+  }
+
+  .left-block {
+    width: 100%;
+  }
+  .right-block {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .popular li {
+    width: 50%;
+  }
+
+  .footer {
+    text-align: center;
+  }
+  .footer-share {
+    float: none;
+    padding-top: 6px;
+    display: inline-block;
+  }
+  .footer-share > img {
+    padding: 4px 0;
+  }
+  .footer-share ul {
+    padding-right: 15px;
+    margin-right: 15px;
+  }
+  .footer-share li {
+    padding-left: 10px;
+  }
+  .copyright {
+    width: 100%;
+    padding: 10px 5px 0 5px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .canlitv {
+    padding: 0;
+  }
+
+  #sidebar {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  #logo img {
+    height: 60px;
+  }
+  .nav-icon {
+    width: 60px;
+    height: 60px;
+    background-size: auto 16px;
+  }
+  .nav-icon-close {
+    background-size: 32px;
+  }
+  .nav-icon-close::after,
+  .navigation::before {
+    display: none;
+  }
+  .nav-letter {
+    left: auto;
+    right: 0;
+    width: 60px;
+    height: 60px;
+  }
+  .nav-letter::before {
+    width: 60px;
+    top: 27px;
+    left: -27px;
+    -webkit-transform: rotate(-270deg);
+    -moz-transform: rotate(-270deg);
+    -o-transform: rotate(-270deg);
+    -ms-transform: rotate(-270deg);
+    transform: rotate(-270deg);
+  }
+
+  .navigation {
+    position: absolute;
+    top: 60px;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    padding-top: 0;
+    text-align: center;
+    border-bottom: 2px solid #000;
+  }
+  .navigation h3 {
+    height: 55px;
+    padding-left: 0;
+    line-height: 55px;
+    box-shadow: none;
+  }
+
+  #header {
+    float: left;
+    width: 100%;
+    position: relative;
+    height: 60px;
+    padding: 0;
+  }
+
+  .top-search-out {
+    padding: 0 75px 0 10px;
+    margin-top: 10px;
+  }
+
+  .top-search {
+    float: left;
+    max-width: 100%;
+  }
+  .top-search input {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .top-search button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .top-avatar span {
+    width: 55px;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+  }
+  .top-avatar span::before {
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 0 10px;
+  }
+  .top-avatar span::after {
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+  }
+
+  .top-menu {
+    top: 60px;
+  }
+  .top-menu::before {
+    right: 22px;
+  }
+
+  .main-wrap {
+    padding: 20px 20px 0 20px;
+  }
+
+  .page-title {
+    margin-bottom: 20px;
+  }
+
+  .contact-form p {
+    padding: 0 15px 20px 15px;
+  }
+  .contact-form p:last-child {
+    padding-bottom: 10px;
+  }
+
+  .contact-info {
+    padding-bottom: 0;
+    margin: -20px 0 0 0;
+  }
+  .contact-info article {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .contact-info article:last-child {
+    box-shadow: inset 0 1px 0 #e7edf0;
+  }
+
+  .player {
+    height: 320px;
+  }
+  .player-out {
+    padding: 0;
+  }
+  .player-wrap {
+    width: auto;
+    max-width: initial;
+    display: block;
+    margin: 0 -20px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .channel-list ul > li {
+    width: 100%;
+  }
+
+  .contact-form p {
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .popular li {
+    width: 100%;
+  }
+
+  .player-out {
+    padding: 0;
+  }
+  .player {
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .player-tab li a,
+  .tab li {
+    padding: 0 15px;
+    font-family: PT Sans Narrow;
+  }
+  .player {
+    height: 320px;
+  }
+}
+
+/* iCheck plugin Minimal skin, pink
+----------------------------------- */
+.icheckbox_minimal-pink,
+.iradio_minimal-pink {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background: url(https://azrov.github.io/cdn/alibox/assets/img/pink.png)
+    no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.icheckbox_minimal-pink {
+  background-position: 0 0;
+}
+.icheckbox_minimal-pink.hover {
+  background-position: -20px 0;
+}
+.icheckbox_minimal-pink.checked {
+  background-position: -40px 0;
+}
+.icheckbox_minimal-pink.disabled {
+  background-position: -60px 0;
+  cursor: default;
+}
+.icheckbox_minimal-pink.checked.disabled {
+  background-position: -80px 0;
+}
+
+.iradio_minimal-pink {
+  background-position: -100px 0;
+}
+.iradio_minimal-pink.hover {
+  background-position: -120px 0;
+}
+.iradio_minimal-pink.checked {
+  background-position: -140px 0;
+}
+.iradio_minimal-pink.disabled {
+  background-position: -160px 0;
+  cursor: default;
+}
+.iradio_minimal-pink.checked.disabled {
+  background-position: -180px 0;
+}
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4),
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi),
+  (min-resolution: 1.25dppx) {
+  .icheckbox_minimal-pink,
+  .iradio_minimal-pink {
+    background-image: url(https://azrov.github.io/cdn/alibox/assets/img/pink@2x.png);
+    -webkit-background-size: 200px 20px;
+    background-size: 200px 20px;
+  }
+}
+.tags {
+  float: left;
+  width: 100%;
+}
+.tags a {
+  float: left;
+  height: 24px;
+  padding: 0 10px;
+  margin: 0 10px 10px 0;
+  color: #fff;
+  background-color: #fd5559;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 22px;
+  transition: all 0.3s;
+}
+.tags a:hover {
+  background-color: #867e7c;
+}
